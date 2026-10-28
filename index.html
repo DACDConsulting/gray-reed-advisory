@@ -96,13 +96,18 @@ h1 em { font-style: italic; font-weight: 400; color: var(--red); }
 .footer-brand { font-weight: 600; color: #fff; margin-bottom: 8px; }
 .legal { margin-top: 32px; padding-top: 20px; border-top: 1px solid #444; font-size: 12px; color: #777; }
 @media (max-width: 900px) {
-  .hero-grid, .challenge-grid, .s-head, .why-grid, .services { grid-template-columns: 1fr; }
-  nav { display: none; }
+  .hero-grid, .challenge-grid, .s-head, .why-grid, .services { grid-template-columns: 1fr; gap: 32px; }
+  .header-inner { height: auto; padding: 12px 0; flex-wrap: wrap; gap: 12px; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 8px; width: 100%; }
+  nav a { margin-left: 0; }
+  .challenge-panel { padding: 28px 20px; min-height: auto; }
+  .svc { padding: 28px 24px; }
+  .hero { padding: 72px 0 56px; }
+  .fact { grid-template-columns: 72px 1fr; }
+  #grpr .wrap { grid-template-columns: 1fr !important; gap: 32px; }
+  .cta .btn { width: 100%; justify-content: center; }
 }
 </style>
-  <meta property="og:image" content="https://bolt.new/static/og_default.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
 </head>
 <body>
 <header class="site-header">

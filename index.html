@@ -1,290 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gray Reed Advisory | Business Strategy & Operations</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gray Reed Advisory | Government Affairs, Public Relations, Risk & Compliance, Procurement</title>
+<meta name="description" content="Gray Reed Advisory Services: focused advisory for business leaders facing high-stakes decisions.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='16' height='56' fill='%23A91D37'/%3E%3Crect x='24' y='4' width='16' height='56' fill='%23A91D37'/%3E%3Crect x='44' y='4' width='16' height='56' fill='%23A91D37'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root {
-  --red: #A91D37;
-  --red-dark: #8A1729;
-  --red-tint: #F8ECEE;
-  --ink: #1D2025;
-  --text: #3C3F45;
-  --slate: #5B5D62;
-  --mute: #87888C;
-  --line: #E4E4E4;
-  --line-soft: #EFEFEF;
-  --wash: #F7F7F6;
-  --white: #FFFFFF;
-  --charcoal: #2B2E34;
-  --font: "Figtree", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --max: 1180px;
-  --gutter: clamp(24px, 5vw, 64px);
-  --section: clamp(80px, 9vw, 140px);
-  --radius: 2px;
-  --ease: cubic-bezier(.2,.7,.2,1);
-}
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body { font-family: var(--font); color: var(--text); background: var(--white); line-height: 1.6; font-size: 17px; }
-a { color: var(--red); text-decoration: none; }
-.wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
-.site-header { position: sticky; top: 0; background: rgba(255,255,255,.96); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); z-index: 100; }
-.header-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
-.brand { font-weight: 700; font-size: 15px; letter-spacing: .04em; text-transform: uppercase; color: var(--ink); }
-.brand span { color: var(--red); }
-nav a { margin-left: 28px; font-size: 14px; font-weight: 500; color: var(--ink); }
-nav a:hover { color: var(--red); }
-.btn { display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 24px; font-weight: 600; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; border: 1px solid var(--red); background: var(--red); color: #fff; border-radius: var(--radius); transition: all .25s var(--ease); cursor: pointer; }
-.btn:hover { background: var(--red-dark); border-color: var(--red-dark); }
-.btn.ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
-.btn.ghost:hover { background: var(--ink); color: #fff; }
-.btn.sm { height: 40px; padding: 0 18px; font-size: 12px; }
-.hero { padding: clamp(100px, 12vw, 160px) 0 clamp(80px, 10vw, 130px); border-bottom: 1px solid var(--line); }
-.hero-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: clamp(48px, 6vw, 100px); align-items: center; }
-.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--red); margin-bottom: 20px; }
-h1 { font-size: clamp(40px, 5.8vw, 72px); line-height: 1.05; letter-spacing: -.03em; color: var(--ink); font-weight: 500; max-width: 14ch; }
-h1 em { font-style: italic; font-weight: 400; color: var(--red); }
-.lead { font-size: clamp(17px, 1.5vw, 20px); color: var(--slate); max-width: 36em; margin: 28px 0 44px; }
-.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 52px; }
-.hero-facts { border-top: 1px solid var(--ink); }
-.fact { display: grid; grid-template-columns: 100px 1fr; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--line); font-size: 15px; color: var(--slate); }
-.fact .k { font-weight: 300; font-size: 36px; color: var(--red); line-height: 1; }
-.section { padding: var(--section) 0; }
-.section.wash { background: var(--wash); }
-.challenge-grid { display: grid; grid-template-columns: 300px 1fr; gap: 56px; }
-.challenge-tabs { display: flex; flex-direction: column; gap: 12px; }
-.tab { text-align: left; padding: 18px 22px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); font-weight: 500; color: var(--ink); cursor: pointer; transition: all .2s var(--ease); }
-.tab:hover, .tab.active { border-color: var(--red); background: var(--red-tint); color: var(--red); }
-.challenge-panel { background: #fff; border: 1px solid var(--line); padding: 48px; min-height: 380px; }
-.challenge-panel h3 { font-size: 28px; color: var(--ink); margin-bottom: 16px; font-weight: 500; }
-.challenge-panel p { color: var(--slate); margin-bottom: 28px; }
-.service-list { display: grid; gap: 16px; }
-.service-item { display: flex; align-items: flex-start; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line-soft); }
-.service-item strong { color: var(--ink); display: block; }
-.service-item span { color: var(--slate); font-size: 15px; }
-.s-head { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 96px); align-items: end; margin-bottom: 64px; }
-.s-head h2 { font-size: clamp(32px, 4vw, 48px); line-height: 1.15; color: var(--ink); font-weight: 500; }
-.s-head p { color: var(--slate); font-size: 18px; }
-.services { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
-.svc { border: 1px solid var(--line); padding: 40px; background: #fff; transition: border-color .2s; }
-.svc:hover { border-color: var(--red); }
-.svc .num { font-size: 13px; letter-spacing: .1em; color: var(--red); font-weight: 600; margin-bottom: 8px; }
-.svc h3 { font-size: 22px; color: var(--ink); margin-bottom: 12px; font-weight: 500; }
-.svc p { color: var(--slate); margin-bottom: 16px; font-size: 16px; }
-.svc ul { list-style: none; }
-.svc li { padding: 6px 0; color: var(--text); font-size: 15px; }
-.svc li::before { content: "\2192 "; color: var(--red); }
-.why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-.pull { font-size: 28px; line-height: 1.4; color: var(--ink); font-weight: 400; margin: 24px 0 36px; }
-.points { display: flex; flex-direction: column; gap: 32px; }
-.point { display: grid; grid-template-columns: 48px 1fr; gap: 16px; }
-.pn { font-size: 14px; font-weight: 600; color: var(--red); }
-.point h4 { color: var(--ink); margin-bottom: 4px; font-weight: 600; }
-.point p { color: var(--slate); font-size: 15px; }
-.cta { background: var(--ink); color: #fff; padding: var(--section) 0; text-align: center; }
-.cta h2 { font-size: clamp(36px, 5vw, 56px); font-weight: 500; margin-bottom: 20px; }
-.cta p { color: #ccc; max-width: 540px; margin: 0 auto 40px; }
-.cta .btn.white { background: #fff; color: var(--ink); border-color: #fff; }
-.cta .btn.white:hover { background: transparent; color: #fff; }
-.site-footer { background: var(--charcoal); color: #aaa; padding: 48px 0 24px; font-size: 14px; }
-.footer-inner { display: flex; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
-.footer-brand { font-weight: 600; color: #fff; margin-bottom: 8px; }
-.legal { margin-top: 32px; padding-top: 20px; border-top: 1px solid #444; font-size: 12px; color: #777; }
-@media (max-width: 900px) {
-  .hero-grid, .challenge-grid, .s-head, .why-grid, .services { grid-template-columns: 1fr; gap: 32px; }
-  .header-inner { height: auto; padding: 12px 0; flex-wrap: wrap; gap: 12px; }
-  nav { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 8px; width: 100%; }
-  nav a { margin-left: 0; }
-  .challenge-panel { padding: 28px 20px; min-height: auto; }
-  .svc { padding: 28px 24px; }
-  .hero { padding: 72px 0 56px; }
-  .fact { grid-template-columns: 72px 1fr; }
-  #grpr .wrap { grid-template-columns: 1fr !important; gap: 32px; }
-  .cta .btn { width: 100%; justify-content: center; }
-}
-</style>
+<!-- Fallback font. Replace with the licensed Gibson web-font kit used on grayreed.com when available. -->
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="utility"><div class="wrap"><span class="u-left">Business advisory backed by Gray Reed, a full-service Texas law firm</span><span class="u-links"><a href="https://www.grprpublicaffairs.com">GRPR</a><a href="https://www.grayreed.com">Gray Reed</a><a href="https://www.linkedin.com/" aria-label="LinkedIn">LinkedIn</a></span></div></div>
 <header class="site-header">
-  <div class="wrap header-inner">
-    <a href="#" class="brand">Gray Reed <span>Advisory</span></a>
-    <nav>
-      <a href="#capabilities">Capabilities</a>
-      <a href="#approach">Approach</a>
-      <a href="#grpr">GRPR</a>
-      <a href="#contact" class="btn sm">Start a Conversation</a>
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="https://www.grprpublicaffairs.com/wp-content/uploads/sites/895/2023/08/Gray-Reed-Advisory-Services-LLC-logo-1.svg" alt="Gray Reed Advisory Services"></a>
+    <nav class="nav" aria-label="Primary">
+      <ul><li><a href="why-gray-reed-advisory.html"><span>Why <span class="nav-long">Gray Reed </span>Advisory</span></a></li><li class="has-dd"><button type="button" aria-expanded="false">Services <i class="chev"></i></button><ul class="dropdown"><li class="dd-label">Core services</li><li><a href="government-affairs.html">Government Affairs<small>Delivered by GRPR</small></a></li><li><a href="public-relations.html">Public Relations<small>Delivered by GRPR</small></a></li><li><a href="risk-compliance.html">Risk & Compliance<small>Gray Reed Advisory</small></a></li><li><a href="procurement.html">Procurement<small>Gray Reed Advisory</small></a></li></ul></li><li class="has-dd"><button type="button" aria-expanded="false">Solutions <i class="chev"></i></button><ul class="dropdown"><li><a href="crisis-command.html">Crisis Command<small>with Gray Reed</small></a></li><li><a href="grids.html">GRIDS<small>Texas data centers</small></a></li></ul></li><li><a href="grpr.html">GRPR</a></li><li><a href="team.html">Our Team</a></li><li><a href="insights.html">Insights</a></li></ul>
+      <a class="btn sm nav-cta" href="contact.html">Contact Us</a>
     </nav>
+    <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
-<main>
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="eyebrow">Business Consulting · Gray Reed Family</div>
-        <h1>Clarity on the next move. <em>Results</em> on the ground.</h1>
-        <p class="lead">Gray Reed Advisory helps growing companies fix what’s slowing them down, sharpen strategy, and execute with operators who have done the work — not just advised on it. When legal questions surface, the full Gray Reed platform is already in the room.</p>
-        <div class="hero-actions">
-          <a href="#challenge" class="btn">See how we help</a>
-          <a href="#contact" class="btn ghost">Talk to an advisor</a>
-        </div>
-        <div class="hero-facts">
-          <div class="fact"><div class="k">20+</div><div>Years of C-suite and consulting experience on the team</div></div>
-          <div class="fact"><div class="k">4</div><div>Core areas: strategy, operations, risk & compliance, reputation</div></div>
-          <div class="fact"><div class="k">1</div><div>Integrated platform with a full-service Texas law firm</div></div>
-        </div>
+<main id="main">
+
+<section class="hero with-img slider" data-slider aria-roledescription="carousel" aria-label="Gray Reed Advisory services">
+  <div class="wrap">
+    <div class="hero-copy">
+      <div class="slides-copy" aria-live="polite">
+      <div class="slide-copy is-active" id="slide-0" role="tabpanel" aria-roledescription="slide" aria-label="1 of 5: Gray Reed Advisory Services">
+        <div class="eyebrow">Gray Reed Advisory Services</div>
+        <h1 class="slide-title">Clear direction for <em>high-stakes</em> decisions.</h1>
+        <p class="lead">Four focused advisory services — government affairs, public relations, risk &amp; compliance and procurement — delivered alongside Gray Reed’s attorneys, so policy, reputation and risk are handled as one strategy.</p>
+        <div class="actions"><a class="btn" href="#services">Our Services <span class="arrow"></span></a><a class="btn ghost" href="contact.html">Talk to Our Team</a></div>
+      </div><div class="slide-copy" id="slide-1" role="tabpanel" aria-roledescription="slide" aria-label="2 of 5: Government Affairs" aria-hidden="true">
+        <div class="eyebrow">Government Affairs</div>
+        <h2 class="slide-title">Be heard at the <em>Capitol.</em></h2>
+        <p class="lead">We develop and execute advocacy plans aligned to your policy goals — and give you the intelligence to act before the landscape shifts.</p>
+        <div class="actions"><a class="btn" href="government-affairs.html" tabindex="-1">Government Affairs <span class="arrow"></span></a><a class="btn ghost" href="contact.html" tabindex="-1">Talk to Our Team</a></div>
+      </div><div class="slide-copy" id="slide-2" role="tabpanel" aria-roledescription="slide" aria-label="3 of 5: Public Relations" aria-hidden="true">
+        <div class="eyebrow">Public Relations</div>
+        <h2 class="slide-title">Own the story before it <em>owns you.</em></h2>
+        <p class="lead">We help organizations navigate shifts in public opinion — protecting brand equity, polishing executive profiles and turning challenges into opportunities.</p>
+        <div class="actions"><a class="btn" href="public-relations.html" tabindex="-1">Public Relations <span class="arrow"></span></a><a class="btn ghost" href="contact.html" tabindex="-1">Talk to Our Team</a></div>
+      </div><div class="slide-copy" id="slide-3" role="tabpanel" aria-roledescription="slide" aria-label="4 of 5: Risk &amp; Compliance" aria-hidden="true">
+        <div class="eyebrow">Risk &amp; Compliance</div>
+        <h2 class="slide-title">Know your exposure. <em>Close</em> the gaps.</h2>
+        <p class="lead">We help clients understand their exposure, fix their gaps and demonstrate accountability to regulators, boards and stakeholders.</p>
+        <div class="actions"><a class="btn" href="risk-compliance.html" tabindex="-1">Risk &amp; Compliance <span class="arrow"></span></a><a class="btn ghost" href="contact.html" tabindex="-1">Talk to Our Team</a></div>
+      </div><div class="slide-copy" id="slide-4" role="tabpanel" aria-roledescription="slide" aria-label="5 of 5: Procurement" aria-hidden="true">
+        <div class="eyebrow">Procurement</div>
+        <h2 class="slide-title">Buy smarter. Contract with <em>confidence.</em></h2>
+        <p class="lead">We help municipalities, school districts and businesses buy smarter — with defensible processes and contracts that deliver what was promised.</p>
+        <div class="actions"><a class="btn" href="procurement.html" tabindex="-1">Procurement <span class="arrow"></span></a><a class="btn ghost" href="contact.html" tabindex="-1">Talk to Our Team</a></div>
       </div>
-      <div>
-        <div style="background: var(--wash); aspect-ratio: 4/5; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; color: var(--mute); font-size: 14px; letter-spacing: .05em;">ADVISORY IN PRACTICE</div>
       </div>
+      <div class="slider-tabs" role="tablist" aria-label="Choose a service" style="--n:5"><button type="button" class="slider-tab is-active" role="tab" aria-label="All Services" aria-selected="true" aria-controls="slide-0"><span class="t-num">01</span><span class="t-label">All Services</span><span class="t-bar"><i></i></span></button><button type="button" class="slider-tab" role="tab" aria-label="Government Affairs" aria-selected="false" aria-controls="slide-1"><span class="t-num">02</span><span class="t-label">Government Affairs</span><span class="t-bar"><i></i></span></button><button type="button" class="slider-tab" role="tab" aria-label="Public Relations" aria-selected="false" aria-controls="slide-2"><span class="t-num">03</span><span class="t-label">Public Relations</span><span class="t-bar"><i></i></span></button><button type="button" class="slider-tab" role="tab" aria-label="Risk &amp; Compliance" aria-selected="false" aria-controls="slide-3"><span class="t-num">04</span><span class="t-label">Risk &amp; Compliance</span><span class="t-bar"><i></i></span></button><button type="button" class="slider-tab" role="tab" aria-label="Procurement" aria-selected="false" aria-controls="slide-4"><span class="t-num">05</span><span class="t-label">Procurement</span><span class="t-bar"><i></i></span></button></div>
     </div>
-  </section>
-  <section class="section challenge" id="challenge">
-    <div class="wrap">
-      <div class="s-head" style="margin-bottom: 40px;">
-        <h2>What needs attention right now?</h2>
-        <p>Select a challenge. We’ll show the specific work we do — and the outcome it is meant to produce.</p>
-      </div>
-      <div class="challenge-grid">
-        <div class="challenge-tabs">
-          <button class="tab active" data-panel="growth">Growth has stalled</button>
-          <button class="tab" data-panel="ops">Operations are messy</button>
-          <button class="tab" data-panel="risk">Risk & compliance gaps</button>
-          <button class="tab" data-panel="reputation">Reputation under pressure</button>
-          <button class="tab" data-panel="board">Board needs clarity</button>
-        </div>
-        <div class="challenge-panel" id="panel-growth">
-          <h3>Growth has stalled</h3>
-          <p>Revenue is flat, the model that got you here is tired, or you are staring at an acquisition that feels bigger than the current team can absorb.</p>
-          <div class="service-list">
-            <div class="service-item"><div><strong>Strategic Planning</strong><span>Facilitated sessions that produce a clear direction, priorities, and an operating plan the organization will actually use.</span></div></div>
-            <div class="service-item"><div><strong>M&A Operations Support</strong><span>Diligence on the operational side of deals, integration planning, and post-close execution so value is not left on the table.</span></div></div>
-            <div class="service-item"><div><strong>Fractional CxO</strong><span>Interim or part-time senior leadership when you need experienced judgment without a full-time hire.</span></div></div>
-          </div>
-        </div>
-        <div class="challenge-panel" id="panel-ops" style="display:none;">
-          <h3>Operations are messy</h3>
-          <p>Processes live in people’s heads, costs are higher than they should be, or vendors are running the relationship instead of you.</p>
-          <div class="service-list">
-            <div class="service-item"><div><strong>Process Enhancement</strong><span>Map current state, remove friction, and install simpler, measurable ways of working.</span></div></div>
-            <div class="service-item"><div><strong>Cost Reduction</strong><span>Targeted work on spend that does not compromise service or growth capacity.</span></div></div>
-            <div class="service-item"><div><strong>Vendor Selection & Management</strong><span>Structure better agreements and ongoing performance so you are not overpaying or under-served.</span></div></div>
-            <div class="service-item"><div><strong>Contract Management</strong><span>Bring visibility and control to agreements that are currently scattered and unmanaged.</span></div></div>
-          </div>
-        </div>
-        <div class="challenge-panel" id="panel-risk" style="display:none;">
-          <h3>Risk & compliance gaps</h3>
-          <p>Cyber exposure, privacy obligations, or regulatory requirements are creating uncertainty for leadership and the board.</p>
-          <div class="service-list">
-            <div class="service-item"><div><strong>Cybersecurity</strong><span>Practical assessments and roadmaps focused on the risks that matter to your business, not a generic checklist.</span></div></div>
-            <div class="service-item"><div><strong>Data Privacy</strong><span>Policies, processes, and response readiness aligned with how you actually handle information.</span></div></div>
-          </div>
-        </div>
-        <div class="challenge-panel" id="panel-reputation" style="display:none;">
-          <h3>Reputation under pressure</h3>
-          <p>A crisis is forming, a regulatory issue is public, or the story in the market does not match the work you are doing.</p>
-          <div class="service-list">
-            <div class="service-item"><div><strong>Crisis Response & Management</strong><span>Delivered through our GRPR division — rapid, coordinated response that protects operations and reputation.</span></div></div>
-            <div class="service-item"><div><strong>Government & Public Affairs</strong><span>Policy engagement and relationships that support business objectives.</span></div></div>
-            <div class="service-item"><div><strong>Strategic Communications</strong><span>Messaging and stakeholder work that is consistent with strategy, not just reactive.</span></div></div>
-          </div>
-          <p style="margin-top:20px;"><a href="https://dacdconsulting.github.io/grpr-interim-preview/" class="btn sm">Explore GRPR</a></p>
-        </div>
-        <div class="challenge-panel" id="panel-board" style="display:none;">
-          <h3>Board needs clarity</h3>
-          <p>Governance feels reactive, composition is off, or the board is not getting the information it needs to govern effectively.</p>
-          <div class="service-list">
-            <div class="service-item"><div><strong>Board Assessment & Enhancement</strong><span>Structured review of composition, practices, and information flow, followed by practical recommendations.</span></div></div>
-          </div>
-        </div>
-      </div>
+  </div>
+  <div class="hero-media sketch color slides-media"><div class="slide-media is-active"><img class="base" src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="Sunlit boardroom (colored pencil sketch)"><img class="dodge" src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="" aria-hidden="true"><img class="wash" src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="" aria-hidden="true"><img class="bleed" src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="" aria-hidden="true"></div><div class="slide-media"><img class="base" src="https://images.unsplash.com/photo-1568807697609-e8aacc588ad9?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1568807697609-e8aacc588ad9?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1568807697609-e8aacc588ad9?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="Texas State Capitol framed by trees (colored pencil sketch)"><img class="dodge" src="https://images.unsplash.com/photo-1568807697609-e8aacc588ad9?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1568807697609-e8aacc588ad9?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1568807697609-e8aacc588ad9?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="" aria-hidden="true"><img class="wash" src="https://images.unsplash.com/photo-1568807697609-e8aacc588ad9?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1568807697609-e8aacc588ad9?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1568807697609-e8aacc588ad9?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="" aria-hidden="true"><img class="bleed" src="https://images.unsplash.com/photo-1568807697609-e8aacc588ad9?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1568807697609-e8aacc588ad9?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1568807697609-e8aacc588ad9?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="" aria-hidden="true"></div><div class="slide-media"><img class="base" src="https://images.unsplash.com/photo-1634064735992-266742efd9d4?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1634064735992-266742efd9d4?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1634064735992-266742efd9d4?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="Dallas skyline and the Margaret Hunt Hill Bridge (colored pencil sketch)"><img class="dodge" src="https://images.unsplash.com/photo-1634064735992-266742efd9d4?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1634064735992-266742efd9d4?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1634064735992-266742efd9d4?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="" aria-hidden="true"><img class="wash" src="https://images.unsplash.com/photo-1634064735992-266742efd9d4?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1634064735992-266742efd9d4?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1634064735992-266742efd9d4?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="" aria-hidden="true"><img class="bleed" src="https://images.unsplash.com/photo-1634064735992-266742efd9d4?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1634064735992-266742efd9d4?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1634064735992-266742efd9d4?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="" aria-hidden="true"></div><div class="slide-media"><img class="base" src="https://images.unsplash.com/photo-1682562031269-58a59c81432c?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1682562031269-58a59c81432c?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1682562031269-58a59c81432c?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="Clean, modern technology facility (colored pencil sketch)"><img class="dodge" src="https://images.unsplash.com/photo-1682562031269-58a59c81432c?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1682562031269-58a59c81432c?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1682562031269-58a59c81432c?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="" aria-hidden="true"><img class="wash" src="https://images.unsplash.com/photo-1682562031269-58a59c81432c?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1682562031269-58a59c81432c?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1682562031269-58a59c81432c?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="" aria-hidden="true"><img class="bleed" src="https://images.unsplash.com/photo-1682562031269-58a59c81432c?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1682562031269-58a59c81432c?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1682562031269-58a59c81432c?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="" aria-hidden="true"></div><div class="slide-media"><img class="base" src="https://images.unsplash.com/photo-1503423571797-2d2bb372094a?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1503423571797-2d2bb372094a?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1503423571797-2d2bb372094a?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="Minimal white conference room (colored pencil sketch)"><img class="dodge" src="https://images.unsplash.com/photo-1503423571797-2d2bb372094a?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1503423571797-2d2bb372094a?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1503423571797-2d2bb372094a?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="" aria-hidden="true"><img class="wash" src="https://images.unsplash.com/photo-1503423571797-2d2bb372094a?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1503423571797-2d2bb372094a?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1503423571797-2d2bb372094a?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="" aria-hidden="true"><img class="bleed" src="https://images.unsplash.com/photo-1503423571797-2d2bb372094a?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1503423571797-2d2bb372094a?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1503423571797-2d2bb372094a?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 960px) 100vw, 46vw" alt="" aria-hidden="true"></div></div>
+</section>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="s-head"><div><div class="eyebrow">What we deliver</div><h2>Four services. <br>One coordinated team.</h2></div><p>We’ve sharpened our focus to the work where an advisory team backed by a law firm creates the most value for our clients.</p></div>
+    <div class="services"><article class="svc reveal"><div class="num">01</div><div class="tag">Delivered by GRPR</div><h3>Government Affairs</h3><p>Legislative and regulatory strategy, advocacy and monitoring across every branch of Texas government.</p><ul><li>Strategy</li><li>Advocacy</li><li>Legislative Monitoring</li></ul><a class="link" href="government-affairs.html">Explore <span class="arrow"></span></a></article><article class="svc reveal"><div class="num">02</div><div class="tag">Delivered by GRPR</div><h3>Public Relations</h3><p>Strategic communications, crisis communication and media training that protect and advance your reputation.</p><ul><li>Strategic Communications</li><li>Crisis Communication</li><li>Media Training</li></ul><a class="link" href="public-relations.html">Explore <span class="arrow"></span></a></article><article class="svc reveal"><div class="num">03</div><div class="tag">&nbsp;</div><h3>Risk & Compliance</h3><p>Fractional CIO leadership, cybersecurity and regulatory compliance programs that hold up under scrutiny.</p><ul><li>Advisory & Fractional CIO</li><li>Cybersecurity</li><li>Compliance</li></ul><a class="link" href="risk-compliance.html">Explore <span class="arrow"></span></a></article><article class="svc reveal"><div class="num">04</div><div class="tag">&nbsp;</div><h3>Procurement</h3><p>Procurement strategy, solicitations, vendor selection and contract management for public entities and businesses.</p><ul><li>Procurement Strategy</li><li>Solicitations & RFP Management</li><li>Vendor Selection & Management</li></ul><a class="link" href="procurement.html">Explore <span class="arrow"></span></a></article></div>
+  </div>
+</section>
+
+<section class="section wash">
+  <div class="wrap">
+    <div class="s-head"><div><div class="eyebrow">Integrated solutions</div><h2>When the stakes cross <br>disciplines.</h2></div><p>Our most complex challenges don’t fit in one practice. These solutions bring Gray Reed’s attorneys and our advisors together from day one.</p></div>
+    <div class="solutions"><article class="sol reveal"><div class="kicker">Integrated solution · with Gray Reed</div><h3>Crisis Command</h3><p>Gray Reed’s integrated crisis readiness, response and recovery offering — attorneys and GRPR working as one team from the first call.</p><div class="pills"><span>Readiness</span><span>The First 15</span><span>The Next 48</span><span>Response</span><span>Recovery</span></div><a class="link" href="crisis-command.html">Learn more <span class="arrow"></span></a></article><article class="sol reveal"><div class="kicker">Integrated solution · Texas data centers</div><h3>GRIDS</h3><p>Government Affairs &amp; Public Relations, Real Estate, Infrastructure, Development and Security — one coordinated team for the Texas data center market.</p><div class="pills"><span>Landowners</span><span>Investors</span><span>Developers</span><span>Operators</span></div><a class="link" href="grids.html">Learn more <span class="arrow"></span></a></article></div>
+  </div>
+</section>
+
+<section class="section grpr-band" id="grpr">
+  <div class="wrap split">
+    <div>
+      <div class="eyebrow">Our public affairs division</div>
+      <a class="grpr-mark" href="grpr.html"><img src="https://www.grprpublicaffairs.com/wp-content/uploads/sites/895/2023/08/grpr-logo-color.svg" alt="GRPR — Gray Reed Public Relations &amp; Government Affairs"></a>
+      <h2>Government affairs and public relations, <br>on one plan.</h2>
+      <p class="pull">Two of our four services are delivered by GRPR, Gray Reed’s public affairs division.</p>
+      <div class="actions" style="margin-top:30px"><a class="btn" href="grpr.html">About GRPR <span class="arrow"></span></a><a class="btn ghost" href="https://www.grprpublicaffairs.com">Visit grprpublicaffairs.com</a></div>
     </div>
-  </section>
-  <section class="section" id="capabilities">
-    <div class="wrap">
-      <div class="s-head">
-        <h2>Four areas. One operating system for the business.</h2>
-        <p>We do not sell a single methodology. We apply experienced judgment across the functions that determine whether a company grows, stalls, or gets distracted.</p>
-      </div>
-      <div class="services">
-        <article class="svc"><div class="num">01</div><h3>Strategy & Growth</h3><p>Define where the business is going and the path that gets it there — including the operational reality of deals.</p><ul><li>Strategic planning</li><li>M&A operations support</li><li>Board assessment & enhancement</li><li>Fractional senior leadership</li></ul></article>
-        <article class="svc"><div class="num">02</div><h3>Operations</h3><p>Make the business run cleaner, cheaper, and with less dependence on any single person.</p><ul><li>Process enhancement</li><li>Cost reduction</li><li>Vendor selection & management</li><li>Contract management</li></ul></article>
-        <article class="svc"><div class="num">03</div><h3>Risk & Compliance</h3><p>Address cybersecurity and privacy exposure with solutions sized to the actual risk and the capacity of the organization.</p><ul><li>Cybersecurity assessments & roadmaps</li><li>Data privacy programs</li></ul></article>
-        <article class="svc"><div class="num">04</div><h3>Reputation & Influence</h3><p>Protect and advance the company’s standing with stakeholders, regulators, and the public — delivered through GRPR.</p><ul><li>Crisis response</li><li>Government & public affairs</li><li>Strategic communications</li></ul></article>
-      </div>
+    <ul class="points">
+      <li class="reveal"><span class="pn">GA</span><div><h4><a href="government-affairs.html">Government Affairs</a></h4><p>Legislative and regulatory strategy, advocacy and monitoring across every branch of Texas government.</p></div></li>
+      <li class="reveal"><span class="pn">PR</span><div><h4><a href="public-relations.html">Public Relations</a></h4><p>Strategic communications, crisis communication and media training that protect and advance your reputation.</p></div></li>
+      <li class="reveal"><span class="pn">+</span><div><h4>Shared solutions</h4><p>GRPR anchors the communications and legislative work in <a class="link" href="crisis-command.html">Crisis Command</a> and <a class="link" href="grids.html">GRIDS</a>, alongside Gray Reed’s attorneys.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <div class="eyebrow">Why Gray Reed Advisory</div>
+      <h2>Backed by a law firm. <br>Built to execute.</h2>
+      <p class="pull">Attorneys advise on compliance. We operationalize it.</p>
+      <p style="margin-top:28px"><a class="link" href="why-gray-reed-advisory.html">Why clients choose Gray Reed Advisory <span class="arrow"></span></a></p>
     </div>
-  </section>
-  <section class="section wash" id="approach">
-    <div class="wrap why-grid">
-      <div>
-        <div class="eyebrow">Why Gray Reed Advisory</div>
-        <h2 style="font-size: clamp(32px,4vw,46px); color: var(--ink); font-weight:500; margin-bottom:8px;">Operators who understand the law firm context.</h2>
-        <p class="pull">Most consultants stop at the recommendation. We stay through execution — and when the issue touches legal, regulatory, or contractual territory, the Gray Reed attorneys are already aligned.</p>
-        <a href="#contact" class="btn">Start with a conversation</a>
-      </div>
-      <div class="points">
-        <div class="point"><div class="pn">01</div><div><h4>Experienced operators</h4><p>Leadership with backgrounds at Accenture, PwC, Goldman Sachs, and as C-suite operators inside professional services firms. We have run the functions we advise on.</p></div></div>
-        <div class="point"><div class="pn">02</div><div><h4>Integrated with Gray Reed</h4><p>Advisory is a subsidiary of Gray Reed. Clients get consulting depth plus ready access to 160+ attorneys across litigation, transactional, and specialized practices when needed.</p></div></div>
-        <div class="point"><div class="pn">03</div><div><h4>Right-sized for mid-market</h4><p>Built for companies that have outgrown informal processes but do not need a large consulting firm’s overhead or methodology. Practical, senior-level work.</p></div></div>
-        <div class="point"><div class="pn">04</div><div><h4>Execution over slides</h4><p>We measure success by changes in how the business runs — clearer decisions, better processes, reduced risk, stronger positioning — not by the volume of deliverables.</p></div></div>
-      </div>
-    </div>
-  </section>
-  <section class="section" id="grpr">
-    <div class="wrap" style="display:grid; grid-template-columns: 1fr 1fr; gap:48px; align-items:center;">
-      <div>
-        <div class="eyebrow">Reputation & Influence</div>
-        <h2 style="font-size:clamp(28px,3.5vw,40px); color:var(--ink); font-weight:500; margin-bottom:16px;">Government relations and strategic communications through GRPR.</h2>
-        <p style="color:var(--slate); margin-bottom:24px;">When the challenge involves policy, public narrative, crisis, or stakeholder influence, our GRPR division handles it. Same platform, specialized expertise in government relations and public relations.</p>
-        <a href="https://dacdconsulting.github.io/grpr-interim-preview/" class="btn">Visit GRPR</a>
-      </div>
-      <div style="background:var(--red-tint); padding:40px; border:1px solid var(--line);">
-        <p style="font-size:18px; color:var(--ink); font-weight:500; margin-bottom:12px;">“Influence the policy. Own the story.”</p>
-        <p style="color:var(--slate); font-size:15px;">GRPR is the public affairs and communications practice inside Gray Reed Advisory. It works alongside strategy, operations, and risk work when reputation and external influence are part of the business problem.</p>
-      </div>
-    </div>
-  </section>
-  <section class="cta" id="contact">
-    <div class="wrap">
-      <div class="eyebrow" style="color:var(--red);">Next step</div>
-      <h2>Tell us where the business is stuck.</h2>
-      <p>A short conversation with a senior advisor. No pitch deck. We will tell you quickly whether we are the right fit and what a focused engagement would look like.</p>
-      <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
-        <a href="mailto:advisory@grayreed.com" class="btn white">Email the team</a>
-        <a href="https://www.grayreed.com/contact" class="btn ghost" style="color:#fff; border-color:rgba(255,255,255,.4);">Gray Reed contact</a>
-      </div>
-    </div>
-  </section>
+    <ul class="points">
+      <li class="reveal"><span class="pn">01</span><div><h4>Law-firm backing</h4><p>Every engagement is supported by Gray Reed, a full-service Texas law firm with deep litigation and transactional bench strength.</p></div></li>
+      <li class="reveal"><span class="pn">02</span><div><h4>One coordinated approach</h4><p>Legal, communications, government affairs and technology risk working from a single plan — not five vendors.</p></div></li>
+      <li class="reveal"><span class="pn">03</span><div><h4>Depth, not breadth</h4><p>Four services, each led by senior practitioners with the relationships and experience to deliver.</p></div></li>
+      <li class="reveal"><span class="pn">04</span><div><h4>Texas relationships</h4><p>Recognized in Capitol Inside’s 2025 Texas Lobby Power Rankings, with access across all branches of Texas government.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="wrap">
+    <div class="stats"><div class="stat reveal"><div class="n">20<sup>+</sup></div><div class="l">Years of senior public-service experience on our bench</div></div><div class="stat reveal"><div class="n">15<sup>+</sup></div><div class="l">Years of legislative tracking experience</div></div><div class="stat reveal"><div class="n">100<sup>+</sup></div><div class="l">Communications and crisis engagements</div></div><div class="stat reveal"><div class="n">160<sup>+</sup></div><div class="l">Gray Reed attorneys to draw on</div></div></div><p class="note">Illustrative figures — confirm or replace before launch.</p>
+  </div>
+</section>
+
+<section class="section wash">
+  <div class="wrap">
+    <div class="s-head"><div><div class="eyebrow">Our work</div><h2>Representative engagements</h2></div><p>A snapshot of how we help clients protect their position and move forward.</p></div>
+    <div class="cases"><article class="case reveal"><div class="ct">Sample engagement · Public university</div><h3>Reputation &amp; issues management</h3><p>Ongoing strategic communications counsel through leadership transitions, campus issues and a statewide media spotlight.</p><div class="res"><b>[Outcome]</b> — e.g., coverage sentiment, response time, audiences reached</div></article><article class="case reveal"><div class="ct">Sample engagement · Statewide trade association</div><h3>Legislative session advocacy</h3><p>Session strategy, testimony preparation and stakeholder engagement to protect members from a costly regulatory change.</p><div class="res"><b>[Outcome]</b> — e.g., bill amended, provision removed, rule withdrawn</div></article><article class="case reveal"><div class="ct">Sample engagement · Critical infrastructure operator</div><h3>Cyber readiness &amp; compliance</h3><p>Gap assessment, remediation roadmap and tabletop exercise ahead of a regulatory audit and insurance renewal.</p><div class="res"><b>[Outcome]</b> — e.g., audit passed, controls implemented, premium impact</div></article></div><p class="note">Representative engagements shown as placeholders — replace with approved client stories before launch.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="s-head"><div><div class="eyebrow">Industries</div><h2>Where we work</h2></div><p>We serve public entities and private companies where regulation, reputation and risk intersect.</p></div>
+    <div class="chips"><span>Higher Education</span><span>Local Government & K-12</span><span>Energy & Utilities</span><span>Data Centers & Digital Infrastructure</span><span>Construction</span><span>Manufacturing</span><span>Healthcare</span><span>Financial Services</span><span>Private Equity Portfolio Companies</span><span>Trade Associations</span></div>
+  </div>
+</section>
+
+<section class="section wash">
+  <div class="wrap">
+    <div class="s-head"><div><div class="eyebrow">Leadership</div><h2>Practice leaders</h2></div><p><a class="link" href="team.html">View the full team <span class="arrow"></span></a></p></div>
+    <div class="people"><article class="person reveal">
+      <div class="photo"><span>AL</span></div>
+      <div class="practice">Government Affairs</div>
+      <h3>Adam Leggett</h3>
+      <div class="title">Managing Director of Government Affairs</div>
+      <div class="contact">
+          <a href="mailto:aleggett@grprpublicaffairs.com">aleggett@grprpublicaffairs.com</a>
+          <a href="tel:5126506109">512.650.6109</a>
+          <a class="bio" href="#">Full bio <span class="arrow"></span></a><!-- EDIT: bio link -->
+        </div>
+    </article><article class="person reveal">
+      <div class="photo"><span>MR</span></div>
+      <div class="practice">Public Relations</div>
+      <h3>Marc Rylander</h3>
+      <div class="title">Chief Communications Officer</div>
+      <div class="contact">
+          <a href="mailto:mrylander@grprpublicaffairs.com">mrylander@grprpublicaffairs.com</a>
+          <a href="tel:2149544135">214.954.4135</a>
+          <a class="bio" href="#">Full bio <span class="arrow"></span></a><!-- EDIT: bio link -->
+        </div>
+    </article><article class="person reveal">
+      <div class="photo"><span>PN</span></div>
+      <div class="practice">Risk & Compliance</div>
+      <h3>Practice Leader Name</h3>
+      <div class="title">Leader, Risk & Compliance</div>
+      <div class="contact">
+          <a href="mailto:name@grayreedadvisory.com">name@grayreedadvisory.com</a>
+          <a href="tel:0000000000">000.000.0000</a>
+          <a class="bio" href="#">Full bio <span class="arrow"></span></a><!-- EDIT: bio link -->
+        </div>
+    </article><article class="person reveal">
+      <div class="photo"><span>PN</span></div>
+      <div class="practice">Procurement</div>
+      <h3>Practice Leader Name</h3>
+      <div class="title">Leader, Procurement</div>
+      <div class="contact">
+          <a href="mailto:name@grayreedadvisory.com">name@grayreedadvisory.com</a>
+          <a href="tel:0000000000">000.000.0000</a>
+          <a class="bio" href="#">Full bio <span class="arrow"></span></a><!-- EDIT: bio link -->
+        </div>
+    </article></div>
+  </div>
+</section>
+
+<section class="section wash"><div class="wrap"><div class="s-head"><div><div class="eyebrow">Insights</div><h2>Latest thinking</h2></div><p><a class="link" href="insights.html">All insights <span class="arrow"></span></a></p></div>
+      <div class="ins-grid"><a class="ins-card reveal" href="https://www.grayreed.com/NewsResources/Thought-Leadership/291202/Governor-Abbott-Directs-TWDB-to-Enforce-Water-Use-Reporting-Requirements-Against-Data-Centers-and-Major-Water-Users-Orders-Coordination-with-ERCOT-Interconnection-Audit" target="_blank" rel="noopener" data-tags="|GRIDS|Government Affairs|" data-type="Article">
+      <div class="ins-meta"><span class="ins-type">Article</span><span>September 17, 2026</span></div>
+      <h3>Governor Abbott Directs TWDB to Enforce Water Use Reporting Requirements Against Data Centers and Major Water Users</h3><p>What the Governor’s directive on water-use reporting — and coordination with ERCOT’s interconnection audit — means for data center developers and other large water users.</p><div class="ins-by">Gray Reed’s GRIDS Initiative · Legal alert in collaboration with GRPR</div><span class="ins-src">grayreed.com <span aria-hidden="true">↗</span></span></a><a class="ins-card reveal" href="https://www.grayreed.com/NewsResources/Thought-Leadership/290802/From-HR-Problem-to-PR-Crisis-Why-Serious-Workplace-Issues-Demand-a-Joint-Legal-and-Communications-Response" target="_blank" rel="noopener" data-tags="|Crisis|Public Relations|" data-type="Article">
+      <div class="ins-meta"><span class="ins-type">Article</span><span>September 8, 2026</span></div>
+      <h3>From HR Problem to PR Crisis: Why Serious Workplace Issues Demand a Joint Legal and Communications Response</h3><p>The six mistakes companies make when a serious workplace complaint turns into a reputational threat — and why legal counsel and communications need to move together.</p><div class="ins-by">Marcus Fettinger, Gray Reed · Charlie Rose, GRPR</div><span class="ins-src">grayreed.com <span aria-hidden="true">↗</span></span></a><a class="ins-card reveal" href="https://www.grayreed.com/NewsResources/Thought-Leadership/287602/Data-Centers-and-Water-Collide-in-Texas" target="_blank" rel="noopener" data-tags="|GRIDS|Government Affairs|" data-type="Article">
+      <div class="ins-meta"><span class="ins-type">Article</span><span>July 28, 2026</span></div>
+      <h3>Data Centers and Water Collide in Texas</h3><p>Why water supply has become one of the defining policy and permitting questions for Texas data center projects.</p><div class="ins-by">Gray Reed legal alert in collaboration with GRPR</div><span class="ins-src">grayreed.com <span aria-hidden="true">↗</span></span></a></div></div></section>
+<section class="section">
+  <div class="wrap"><div class="quote reveal"><blockquote>Placeholder testimonial. A short, specific client quote about outcomes and partnership belongs here — two sentences at most.</blockquote><cite><b>Client Name</b> · Title, Organization</cite></div></div>
+</section>
+
+<section class="section tight flush" style="padding-top:0">
+  <div class="wrap"><div class="family"><a href="https://www.grayreed.com"><img src="https://www.grayreed.com/templates/site/images/logo.png" alt="Gray Reed"><span>Full-service Texas law firm <span class="arrow" style="margin-left:6px"></span></span></a><a href="https://www.grayreedadvisory.com"><img src="https://www.grprpublicaffairs.com/wp-content/uploads/sites/895/2023/08/Gray-Reed-Advisory-Services-LLC-logo-1.svg" alt="Gray Reed Advisory"><span>Business advisory services <span class="arrow" style="margin-left:6px"></span></span></a><a href="https://www.grprpublicaffairs.com"><img src="https://www.grprpublicaffairs.com/wp-content/uploads/sites/895/2023/08/grpr-logo-color.svg" alt="GRPR"><span>Public relations &amp; government affairs <span class="arrow" style="margin-left:6px"></span></span></a></div></div>
+</section>
+<section class="cta">
+  <div class="wrap">
+    <div><div class="eyebrow light">Start a conversation</div><h2>Facing a high-stakes <em class="cta-em">decision?</em></h2></div>
+    <div><p>Tell us what’s at stake. We’ll bring the right people from across Gray Reed to the table.</p><div class="actions"><a class="btn white" href="contact.html">Contact Us <span class="arrow"></span></a><a class="btn ghost" style="color:#fff;border-color:rgba(255,255,255,.4)" href="team.html">Meet the Team</a></div></div>
+  </div>
+</section>
 </main>
 <footer class="site-footer">
   <div class="wrap">
-    <div class="footer-inner">
-      <div>
-        <div class="footer-brand">Gray Reed Advisory</div>
-        <p>A subsidiary of Gray Reed. Business strategy, operations, risk, and reputation consulting.</p>
-      </div>
-      <div>
-        <p>Dallas · Houston · Waco</p>
-        <p style="margin-top:8px;"><a href="https://www.grayreed.com" style="color:#aaa;">Gray Reed</a> · <a href="https://dacdconsulting.github.io/grpr-interim-preview/" style="color:#aaa;">GRPR</a></p>
-      </div>
+    <div class="f-top">
+      <div class="f-brand"><img src="https://www.grprpublicaffairs.com/wp-content/uploads/sites/895/2023/08/Gray-Reed-Advisory-Services-LLC-logo-1.svg" alt="Gray Reed Advisory Services"><p>Focused advisory for business leaders facing high-stakes decisions — delivered alongside Gray Reed’s attorneys.</p></div>
+      <div class="f-col"><h5>Services</h5><ul><li><a href="government-affairs.html">Government Affairs</a></li><li><a href="public-relations.html">Public Relations</a></li><li><a href="risk-compliance.html">Risk & Compliance</a></li><li><a href="procurement.html">Procurement</a></li></ul></div>
+      <div class="f-col"><h5>Solutions</h5><ul><li><a href="crisis-command.html">Crisis Command</a></li><li><a href="grids.html">GRIDS</a></li></ul></div>
+      <div class="f-col"><h5>Gray Reed</h5><ul><li><a href="https://www.grayreed.com">Gray Reed (law firm)</a></li><li><a href="https://www.grprpublicaffairs.com">GRPR</a></li><li><a href="why-gray-reed-advisory.html">Why Gray Reed Advisory</a></li><li><a href="grpr.html">About GRPR</a></li><li><a href="team.html">Our Team</a></li><li><a href="insights.html">Insights</a></li><li><a href="contact.html">Contact</a></li></ul></div>
     </div>
-    <div class="legal">Gray Reed Advisory is a business consulting firm and a subsidiary of Gray Reed. It is not a law firm and does not provide legal advice. Legal services are provided only by Gray Reed attorneys. Prior results do not guarantee a similar outcome.</div>
+    <div class="f-bottom">
+      <div class="f-parent"><a href="https://www.grayreed.com"><img src="https://www.grayreed.com/templates/site/images/logo.png" alt="Gray Reed"></a><span>Copyright © <span data-year>2026</span>, Gray Reed Advisory Services LLC. All Rights Reserved.</span></div>
+      <nav><a href="#">Privacy Policy</a><a href="#">Disclaimer</a><a href="#">Sitemap</a></nav><!-- EDIT: legal links -->
+    </div>
   </div>
 </footer>
-<script>
-document.querySelectorAll('.tab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.challenge-panel').forEach(p => p.style.display = 'none');
-    tab.classList.add('active');
-    const panel = document.getElementById('panel-' + tab.dataset.panel);
-    if (panel) panel.style.display = 'block';
-  });
-});
-</script>
+<script src="js/site.js"></script>
 </body>
 </html>

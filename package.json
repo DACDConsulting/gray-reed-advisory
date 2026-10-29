@@ -1,18 +1,11 @@
 {
   "name": "gray-reed-advisory",
   "private": true,
-  "version": "0.1.0",
-  "type": "module",
-  "engines": {
-    "node": ">=18"
-  },
+  "version": "0.2.0",
+  "description": "Gray Reed Advisory interim site — plain HTML/CSS/JS",
   "scripts": {
-    "dev": "vite --host 0.0.0.0 --port 5173",
-    "start": "vite --host 0.0.0.0 --port 5173",
-    "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0 --port 4173"
-  },
-  "dependencies": {
-    "vite": "^5.4.11"
+    "dev": "npx --yes serve . -p 5173",
+    "start": "npx --yes serve . -p 5173",
+    "preview": "npx --yes serve . -p 4173"
   }
 }
